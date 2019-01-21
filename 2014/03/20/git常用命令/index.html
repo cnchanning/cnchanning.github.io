@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>git常用命令 | Channing&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="##配置首先需要配置帐号信息git config –global user.name xxxgit config –global user.email xxx@xxx.comgit config –list#查看配置的信息git help config#获取帮助信息配置密钥ssh-keygen -t rsa -C xxx@xxx.com #生成密钥ssh -T git@github.com #测试">
+<meta name="keywords" content="git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git常用命令">
+<meta property="og:url" content="http://fewcy.com/2014/03/20/git常用命令/index.html">
+<meta property="og:site_name" content="Channing&#39;s Blog">
+<meta property="og:description" content="##配置首先需要配置帐号信息git config –global user.name xxxgit config –global user.email xxx@xxx.comgit config –list#查看配置的信息git help config#获取帮助信息配置密钥ssh-keygen -t rsa -C xxx@xxx.com #生成密钥ssh -T git@github.com #测试">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-01-21T03:50:04.681Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="git常用命令">
+<meta name="twitter:description" content="##配置首先需要配置帐号信息git config –global user.name xxxgit config –global user.email xxx@xxx.comgit config –list#查看配置的信息git help config#获取帮助信息配置密钥ssh-keygen -t rsa -C xxx@xxx.com #生成密钥ssh -T git@github.com #测试">
+  
+    <link rel="alternate" href="/atom.xml" title="Channing&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-9082415583667745",
+            enable_page_level_ads: true
+       });
+  </script>
+
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?f281dc6362b27f32fdc1d0d03af6785c";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Channing&#39;s Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://fewcy.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-git常用命令" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2014/03/20/git常用命令/" class="article-date">
+  <time datetime="2014-03-20T13:55:54.000Z" itemprop="datePublished">2014-03-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      git常用命令
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>##配置<br>首先需要配置帐号信息<br>git config –global user.name xxx<br>git config –global user.email <a href="mailto:xxx@xxx.com" target="_blank" rel="noopener">xxx@xxx.com</a><br>git config –list#查看配置的信息<br>git help config#获取帮助信息<br>配置密钥<br>ssh-keygen -t rsa -C <a href="mailto:xxx@xxx.com" target="_blank" rel="noopener">xxx@xxx.com</a> #生成密钥<br>ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a> #测试是否成功</p>
+<p>##新建仓库<br>git init#初始化<br>git status#获取状态<br>git add file#.或*代表全部添加<br>git commit -m “message”#此处注意乱码<br>git remote add origin <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:xxx/xxx.git#添加源<br>git push -u origin master#push同事设置默认跟踪分支</p>
+<p>##从现有仓库克隆<br>git clone git://github.com/yanhaijing/data.js.git<br>git clone git://github.com/schacon/grit.git mypro#克隆到自定义文件夹</p>
+<p>##本地<br>git add <em>#跟踪新文件<br>rm </em>&amp;git rm <em>#移除文件<br>git rm -f </em>#移除文件<br>git rm –cached <em>#取消跟踪<br>git mv file_from file_to#重命名跟踪文件<br>git log#查看提交记录<br>git status#查看当前状态<br>git commit#提交更新<br>git commit -m ‘message’<br>git commit -a#跳过使用暂存区域，把所有已经跟踪过的文件暂存起来一并提交<br>git commit –amend#修改最后一次提交<br>git reset HEAD </em>#取消已经暂存的文件<br>git checkout – file#取消对文件的修改（从暂存区去除file）<br>git checkout branch|tag|commit – file_name#从仓库取出file覆盖当前分支<br>git checkout – .#从暂存区去除文件覆盖工作区</p>
+<p>##分支<br>git branch#列出本地分支<br>git branch -r#列出远端分支<br>git branch -a#列出所有分支<br>git branch -v#查看各个分支最后一个提交对象的信息<br>git branch –merge#查看已经合并到当前分支的分支<br>git branch –no-merge#查看为合并到当前分支的分支<br>git branch test#新建test分支<br>git checkout test#切换到test分支<br>git checkout -b test#新建+切换到test分支<br>git checkout -b test dev#基于dev新建test分支，并切换<br>git branch -d test#删除test分支<br>git branch -D test#强制删除test分支<br>git merge test#将test分支合并到当前分支<br>git rebase master#将master分之上超前的提交，变基到当前分支</p>
+<p>##远端<br>git fetch originname branchname#拉去远端上指定分支<br>git merge originname branchname#合并远端上指定分支<br>git push originname branchname#推送到远端上指定分支<br>git push originname localbranch:serverbranch#推送到远端上指定分支<br>git checkout -b test origin/dev#基于远端dev新建test分支<br>git push origin :server#删除远端分支</p>
+<p>##源<br>git是一个分布式代码管理工具，所以可以支持多个仓库，在git里，服务器上的仓库在本地称之为remote。<br>git remote add origin1 <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:yanhaijing/data.js.git<br>git remote#显示全部源<br>git remote -v#显示全部源+详细信息<br>git remote rename origin1 origin2#重命名<br>git remote rm origin1#删除<br>git remote show origin1#查看指定源的全部信息</p>
+<p>##标签<br>当开发到一定阶段时，给程序打标签是非常棒的功能。<br>git tag#列出现有标签<br>git tag v0.1#新建标签<br>git tag -a v0.1 -m ‘my version 1.4’#新建带注释标签<br>git checkout tagname#切换到标签<br>git push origin v1.5#推送分支到源上<br>git push origin –tags#一次性推送所有分支<br>git tag -d v0.1#删除标签<br>git push origin :refs/tags/v0.1#删除远程标签</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://fewcy.com/2014/03/20/git常用命令/" data-id="cjr5xw8cu0003pps6fiyd8p24" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/03/11/CentOS6.3 安装 node-canvas/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          CentOS6.3 安装 node-canvas
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Electron/">Electron</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/centos-node-canvas-cairo/">centos node-canvas cairo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css-居中/">css 居中</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/压力测试/">压力测试</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Electron/" style="font-size: 10px;">Electron</a> <a href="/tags/centos-node-canvas-cairo/" style="font-size: 10px;">centos node-canvas cairo</a> <a href="/tags/css-居中/" style="font-size: 10px;">css 居中</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/压力测试/" style="font-size: 10px;">压力测试</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">July 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">May 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">March 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/03/">March 2014</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/07/03/使用Electron创建跨平台桌面应用/">使用Electron创建跨平台桌面应用(译)</a>
+          </li>
+        
+          <li>
+            <a href="/2016/06/09/使用CSS完成元素居中的七种方法(译)/">使用CSS完成元素居中的七种方法(译)</a>
+          </li>
+        
+          <li>
+            <a href="/2015/05/20/ab测试工具/">ab测试工具</a>
+          </li>
+        
+          <li>
+            <a href="/2015/03/11/CentOS6.3 安装 node-canvas/">CentOS6.3 安装 node-canvas</a>
+          </li>
+        
+          <li>
+            <a href="/2014/03/20/git常用命令/">git常用命令</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Channing<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
